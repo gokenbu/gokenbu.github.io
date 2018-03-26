@@ -1,0 +1,48 @@
+<HTML><HEAD><TITLE>振动试验条件计算</TITLE>
+<META content="text/html; charset=GB2312" http-equiv=Content-Type>
+<SCRIPT language=JavaScript>
+function acceleration_calc_func()
+{document.acceleration_calc.result.value=eval(document.acceleration_calc.amplitude.value)/2*0.001*Math.pow((2*Math.PI*document.acceleration_calc.frequency.value),2)/9.8;
+}
+function amplitude_calc_func(){document.amplitude_calc.result.value=eval
+(document.amplitude_calc.acceleration.value)*2*1000/Math.pow((2*Math.PI*document.amplitude_calc.frequency.value),2)*9.8;
+}
+function frequency_calc_func(){document.frequency_calc.result.value=eval
+(0.5)/Math.PI*Math.sqrt((document.frequency_calc.acceleration.value)/(document.frequency_calc.amplitude.value)*2*1000*9.8);
+}
+</SCRIPT>
+
+<META id=chromesniffer_meta name=chromesniffer content={}>
+<SCRIPT type=text/javascript src=""></SCRIPT>
+
+<STYLE id=style-1-cropbar-clipper>.en-markup-crop-options {
+	BORDER-RIGHT-WIDTH: 2px !important; WIDTH: 200px !important; BORDER-TOP-WIDTH: 2px !important; BORDER-BOTTOM-WIDTH: 2px !important; MARGIN-LEFT: -100px !important; BORDER-LEFT-WIDTH: 2px !important; TOP: 18px !important; LEFT: 50% !important; border-radius: 4px
+}
+.en-markup-crop-options DIV DIV:unknown {
+	MARGIN-LEFT: 0px !important
+}
+</STYLE>
+
+</HEAD>
+<BODY>
+<IMG src="\\10.110.11.11\開発統括部\開発部\開発1課\伍俭武\0.Link\pic\acceleration.png"> 
+
+<FORM name=acceleration_calc>
+<H3>全振幅 = <INPUT size=10 name=amplitude> mm (peak to peak)<BR>振动频率 = <INPUT 
+size=10 name=frequency> Hz<BR><BR>加速度（计算结果） <INPUT name=result> G </H3><INPUT onclick=acceleration_calc_func() value=计算 type=button> <INPUT value=Reset type=reset> </FORM>
+<HR>
+<IMG 
+src="\\10.110.11.11\開発統括部\開発部\開発1課\伍俭武\0.Link\pic\amplitude.png"> 
+
+<FORM name=amplitude_calc>
+<H3>加速度= <INPUT size=10 name=acceleration> G<BR>振动频率 = <INPUT size=10 
+name=frequency> Hz<BR><BR>全振幅<INPUT name=result> mm (peak to peak) </H3><INPUT onclick=amplitude_calc_func() value=计算 type=button> <INPUT value=Reset type=reset> </FORM>
+<HR>
+<IMG 
+src="\\10.110.11.11\開発統括部\開発部\開発1課\伍俭武\0.Link\pic\frequency.png">
+<FORM name=frequency_calc>
+<H3>加速度 = <INPUT size=10 name=acceleration> G<BR>全振幅 = <INPUT size=10 
+name=amplitude> mm (peak to peak)<BR><BR>振动频率 <INPUT name=result> Hz </H3><INPUT onclick=frequency_calc_func() value=计算 type=button> <INPUT value=Reset type=reset> </FORM>
+<HR>
+WU
+</BODY></HTML>
