@@ -21,18 +21,23 @@ function frequency_calc_func(){document.frequency_calc.result.value=eval
 
 </HEAD>
 <BODY>
-<IMG src=""> 
 
+<H2>计算加速度</H2>
+<IMG src=""> 
 <FORM name=acceleration_calc>
-<H3>全振幅 = <INPUT size=10 name=amplitude> mm (peak to peak)<BR>振动频率 = <INPUT 
-size=10 name=frequency> Hz<BR><BR>加速度（计算结果） <INPUT name=result> G </H3><INPUT onclick=acceleration_calc_func() value=计算 type=button> <INPUT value=Reset type=reset> </FORM>
+<H4>【条件】 全振幅 = <INPUT size=10 name=amplitude> mm (peak to peak)， 振动频率 = <INPUT 
+size=10 name=frequency> Hz
+<BR>
+<BR>【结果】 加速度= <INPUT name=result> G </H4><INPUT onclick=acceleration_calc_func() value=计算 type=button> <INPUT value=Reset type=reset> </FORM>
 <HR>
+<H2>计算全振幅</H2>
+<IMG src=""> 
 <IMG 
 src=""> 
 
 <FORM name=amplitude_calc>
-<H3>加速度= <INPUT size=10 name=acceleration> G<BR>振动频率 = <INPUT size=10 
-name=frequency> Hz<BR><BR>全振幅<INPUT name=result> mm (peak to peak) </H3><INPUT onclick=amplitude_calc_func() value=计算 type=button> <INPUT value=Reset type=reset> </FORM>
+<H4>【条件】 加速度= <INPUT size=10 name=acceleration> G， 振动频率 = <INPUT size=10 
+name=frequency> Hz<BR><BR>全振幅<INPUT name=result> mm (peak to peak) </H4><INPUT onclick=amplitude_calc_func() value=计算 type=button> <INPUT value=Reset type=reset> </FORM>
 <HR>
 <IMG 
 src="">
