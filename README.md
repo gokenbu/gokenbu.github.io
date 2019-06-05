@@ -1,1 +1,0 @@
-# gokenbu.github.io
